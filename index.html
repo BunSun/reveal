@@ -7,8 +7,6 @@
 	<link rel="stylesheet" href="dist/reset.css">
 	<link rel="stylesheet" href="dist/reveal.css">
 	<link rel="stylesheet" href="dist/theme/black.css">
-	<!-- Theme used for syntax highlighted code -->
-	<link rel="stylesheet" href="plugin/highlight/monokai.css">
 </head>
 <body>
 	<div class="reveal">
@@ -98,11 +96,39 @@
 				</aside>
 			</section>
 			<section>
+				<h2>Implementierung der Datenbankanbindung</h2>
+				<img src="images/Code1.png" alt="Code zur Implementierung der Datenbankanbindung">
+				<aside class="notes">
+					Dies ist der Code zur Implementierung der Datenbankanbindung. Die Klasse NoteContext erbt von DbContext und enthält eine DbSet<Note>, die die Notizen in der Datenbank repräsentiert. Die Methode OnConfiguring konfiguriert die Datenbankverbindung.
+				</aside>
+			</section>
+			<section>
+				<h2>Implementierung der Geschäftslogik</h2>
+				<img src="images/Code2.png" alt="Code für den NoteController">
+				<aside class="notes">
+					Der NoteController enthält die Logik für CRUD-Operationen. Diese Klasse hat Methoden zum Hinzufügen, Abrufen, Aktualisieren und Löschen von Notizen.
+				</aside>
+			</section>
+			<section>
+				<h2>Entwicklung der Benutzeroberfläche</h2>
+				<img src="images/Code3.png" alt="Code für das MainForm">
+				<aside class="notes">
+					Dies ist der Code für das MainForm. Es zeigt eine Liste von Notizen an und ermöglicht das Hinzufügen und Löschen von Notizen über Schaltflächen.
+				</aside>
+			</section>
+			<section>
 				<h2>6. Abnahmephase</h2>
 				<h3>Tests und Ergebnisse</h3>
 				<p>Unit-, Integrations- und Systemtests.</p>
 				<aside class="notes">
 					Beschreibung der durchgeführten Tests und deren Ergebnisse.
+				</aside>
+			</section>
+			<section>
+				<h2>Beispiel eines Unit-Tests</h2>
+				<img src="images/Code4.png" alt="Code für einen Unit-Test">
+				<aside class="notes">
+					Der Test AddNote_ShouldAddNoteToDatabase überprüft, ob eine neue Notiz korrekt zur Datenbank hinzugefügt wird. Der Test erstellt eine neue Notiz, fügt sie über den Controller zur Datenbank hinzu und stellt sicher, dass die Notiz in der Datenbank gespeichert wurde.
 				</aside>
 			</section>
 			<section>
